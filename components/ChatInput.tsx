@@ -45,7 +45,7 @@ const ChatInput = ({onSendMessage} : any) => {
 
     const getAiResponse = async (message : string) => {
         try {
-            const response = await fetch(`http://hanabi-assignment.vercel.app/api/v1`,{
+            const response = await fetch(`https://hanabi-assignment.vercel.app/api/v1`,{
                 method:"POST",
                 headers: {
                     "Content-type": "application/json",
