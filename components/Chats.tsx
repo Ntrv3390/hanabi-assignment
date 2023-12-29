@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const Chats = ({ messages } : any) => {
     return (<>
     {messages != null && messages.map((chat : any) => (
-    <div className={cn('flex p-4 items-end', {
+    <div key={chat.key} className={cn('flex p-4 items-end', {
         "justify-end" : chat.id == 1,
     })}>
         <div className={cn("flex flex-col space-y-2 text-base max-w-md mx-2",
